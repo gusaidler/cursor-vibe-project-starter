@@ -1,0 +1,28 @@
+---
+description: Project Rules for Cursor
+globs: 
+alwaysApply: true
+---
+## General Guidelines
+- Write Python code adhering to PEP 8 for readability and consistency.
+- Use descriptive names for variables, functions, and classes.
+- Include docstrings for all functions and classes.
+- Handle exceptions with clear error messages or logging.
+
+## Best Practices for Python CLI Development
+- Use Click to define commands and options with clear help text.
+- Validate inputs with Pydantic to catch errors early.
+- Keep the CLI intuitive with concise prompts and examples.
+- Minimize OpenRouter API calls to optimize performance and cost.
+
+## Documentation Instructions
+- After completing a feature or fix, append an entry to `docs/development-log.md` with:
+  - Incremental sequence, starting from 1
+  - Summary of changes
+  - Reasoning behind decisions
+- Before starting a session, review `docs/development-log.md` for context.
+
+## Example Rules
+- "Add type hints to all function signatures for clarity."
+- "Provide usage examples in Click command help text."
+- "Log API requests and responses (excluding sensitive data) for debugging."
